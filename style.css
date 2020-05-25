@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 5rem;
+}
+body {
+    background-image: url(img/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+}
+/* Nav */
+nav {
+    display: flex;  
+    grid-area: nav 
+}
+ul {
+    display: flex;    
+    padding-left: 580px;
+}
+li {
+    list-style: none;
+    padding-left: 70px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway;
+    font-weight: 500;
+}
+/* Section 1 */
+#section1 {
+    display: grid;
+    margin-top: 8rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'left right';
+}
+#section1 h1 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+#section1 #left {
+    grid-area: left;
+    width: 100%;
+}
+#section1 #right img {
+    grid-area: right;
+    padding-left: 8%;
+    width: 80%;
+}
+
+#section1 #left p{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1rem;  
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+/* Section 1 form */
+#section1 #left form {
+    margin-top: 2rem;
+}
+#section1 #left form input{
+    width: 16rem;
+    height: 2.3rem;
+    padding-left: 1rem;
+}
+#section1 #left form button {
+    background-color: hsl(224, 93%, 58%);
+    width: 10rem;
+    height: 2.55rem;
+    border: none;
+    border-radius: 4px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: white;
+}
+/* Section 2 */
+#section2 {
+    display: grid;
+    padding-left: 5rem;
+    padding-top: 7rem;
+    margin-top: 11rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'left right';
+    background-color: #F8F8FE;
+}
+#section2 div#left h1{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+#section2 div#left p {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1rem;  
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+#section2 div#left {
+    grid-area: left;
+}
+#section2 div#right img{
+    grid-area: right;
+    width: 80%;
+}
+/* Section 2 Qoute Link */
+#section2 div#left a {
+    color: hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    border-bottom: 1px hsl(170, 45%, 43%) solid;
+}
+#section2 div#left a img {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+/* Section2 Qoute */
+#section2 div#left div#quote {
+    background-color: white;
+    width: 55%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 7rem;
+    padding: 0rem 2rem;
+    border:none;
+    border-radius: 10px;
+}
+#section2 div#left div#quote img {
+    position: relative;
+    top: 20px;
+}
+#section2 div#left div#quote p{
+    position: relative;
+    top: 20px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+/* Quote Details */
+#section2 div#left div#quote div#quote-details img{
+    width: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+#section2 div#left div#quote div#quote-details h5 {
+    position: relative;
+    left: 38px;
+    bottom: 15px;
+    font-family: "Open Sans";
+    font-weight: 800;
+}
+#section2 div#left div#quote div#quote-details h6 {
+    position: relative;
+    left: 38px;
+    bottom: 15px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+/* Section 3 */
+#section3 {
+    background-color: hsl(238, 22%, 44%);
+}
+#section3 .container{
+    display:grid;
+    padding: 5rem;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'left right';
+}
+#section3 div#left {
+    grid-area:left;
+}
+#section3 div#right {
+    grid-area:right;
+}
+#section3 h1{
+    font-family: Raleway;
+    font-size: 2rem;
+    color:white;
+    padding-top: 1rem;
+}
+#section3 p{
+    font-family: "Open Sans";
+    font-weight: 300;
+    color:white;
+    margin-top: 2rem;
+}
+#section3 div.container div#right {
+    padding-left: 10%;
+}
+#section3 div.container div#right #form input{
+    width: 70%;
+    height: 40px;
+    font-family: Raleway;
+    padding-left: 3%;
+    display:block;
+}
+#section3 div.container div#right #form button{
+    font-family: Raleway;
+    font-weight: 500;
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    background-color: hsl(224, 93%, 58%);
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    
+    display:block;
+}
+/* Footer */
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    font-family: Raleway;
+    color:white;
+    height: 25rem;
+}
+footer #wrapper {
+    padding: 5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'one two three';
+}
+footer div#wrapper div#contact img {
+    display:inline;
+    margin-right: 1rem;
+}
+footer div#wrapper div#contact p {
+    display:inline;
+}
+footer div#wrapper div#contact {
+    grid-area: one;
+}
+footer div#wrapper #list1 {
+    grid-area: two;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+}
+footer div#wrapper #list2 {
+    grid-area: three;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+}
+li {
+    padding-top: 15px;
+}
+footer div#wrapper div#socials i {
+    border: 1px white solid;
+    padding: 10px;
+    margin-right: 1rem;
+    border-radius: 50px;
+}
